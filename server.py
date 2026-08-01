@@ -95,8 +95,7 @@ class CustomHandler(SimpleHTTPRequestHandler):
             return
 
         # Simple URL rewriting for directories without trailing slash
-        if self.path in ['/services', '/contact', '/pricing']:
-            self.path += '/index.html'
+        
 
         # Call the parent class for standard file serving
         return super().do_GET()
