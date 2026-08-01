@@ -21,13 +21,13 @@
         <!-- Segmented Filter Control -->
         <div class="flex justify-center relative z-20" style="margin-bottom: 4rem;">
             <div class="inline-flex rounded-full shadow-inner" style="background-color: var(--muted); border: 1px solid var(--border); padding: 0.5rem; gap: 0.5rem; font-family: 'Plus Jakarta Sans', sans-serif;">
-                <button onclick="filterPricing('ppc', this)" class="pricing-filter active relative px-6 py-2.5 text-sm font-semibold rounded-full transition-all duration-300 text-primary" style="color: var(--primary);-foreground bg-primary shadow-sm" data-target="ppc">
+                                <button onclick="filterPricing('ppc', this)" class="pricing-filter active" style="border-radius: 9999px; padding: 0.75rem 2rem; background-color: var(--primary); color: white; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 0.9rem; letter-spacing: 0.02em; border: none; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 14px 0 rgba(108,59,255,0.39);" data-target="ppc">
                     PPC Ads
                 </button>
-                <button onclick="filterPricing('seo', this)" class="pricing-filter relative text-sm font-semibold transition-all duration-300 text-muted-foreground" style="border-radius: 9999px; padding: 0.75rem 2rem; background: transparent; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.02em;" data-target="seo">
+                <button onclick="filterPricing('seo', this)" class="pricing-filter" style="border-radius: 9999px; padding: 0.75rem 2rem; background: transparent; color: var(--muted-foreground); font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.02em; border: none; cursor: pointer; transition: all 0.3s ease;" data-target="seo">
                     SEO
                 </button>
-                <button onclick="filterPricing('web', this)" class="pricing-filter relative text-sm font-semibold transition-all duration-300 text-muted-foreground" style="border-radius: 9999px; padding: 0.75rem 2rem; background: transparent; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.02em;" data-target="web">
+                <button onclick="filterPricing('web', this)" class="pricing-filter" style="border-radius: 9999px; padding: 0.75rem 2rem; background: transparent; color: var(--muted-foreground); font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.02em; border: none; cursor: pointer; transition: all 0.3s ease;" data-target="web">
                     Web Design
                 </button>
             </div>
@@ -109,7 +109,7 @@
             </div>
 
             <!-- SEO CARDS (Hidden initially) -->
-            <div class="pricing-card seo" style="background-color: white; border-radius: 1.5rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); border: 1px solid #E5E7EB; padding: 2.5rem; position: relative; transition: transform 0.3s ease, opacity 0.3s ease; display: flex; flex-direction: column; height: 100%;">
+            <div class="pricing-card seo" style="display: none; display: none;" style="background-color: white; border-radius: 1.5rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); border: 1px solid #E5E7EB; padding: 2.5rem; position: relative; transition: transform 0.3s ease, opacity 0.3s ease; display: flex; flex-direction: column; height: 100%;">
 <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div class="relative z-10 flex flex-col h-full">
                     <h3 class="text-2xl font-bold text-foreground mb-2" style="font-family: \'Plus Jakarta Sans\', sans-serif; font-size: 1.75rem; font-weight: 800; margin-bottom: 0.75rem; letter-spacing: -0.02em;">Starter SEO</h3>
@@ -128,7 +128,7 @@
                 </div>
             </div>
             
-            <div class="pricing-card seo" style="background-color: white; border-radius: 1.5rem; box-shadow: 0 8px 30px rgba(108,59,255,0.15); border: 2px solid var(--primary); padding: 2.5rem; position: relative; transition: transform 0.3s ease, opacity 0.3s ease; display: flex; flex-direction: column; height: 100%;">
+            <div class="pricing-card seo" style="display: none; display: none;" style="background-color: white; border-radius: 1.5rem; box-shadow: 0 8px 30px rgba(108,59,255,0.15); border: 2px solid var(--primary); padding: 2.5rem; position: relative; transition: transform 0.3s ease, opacity 0.3s ease; display: flex; flex-direction: column; height: 100%;">
 <div class="absolute -inset-[1px] bg-gradient-to-b from-primary via-accent to-primary opacity-30 rounded-3xl blur-[2px] -z-10 group-hover:opacity-60 transition-opacity duration-500"></div>
                 <div class="absolute top-4 right-4 bg-gradient-to-r from-primary to-accent text-white text-[10px] font-black uppercase tracking-widest py-1.5 px-3 rounded-full shadow-lg">Most Popular</div>
                 <div class="relative z-10 flex flex-col h-full">
@@ -149,7 +149,7 @@
                 </div>
             </div>
 
-            <div class="pricing-card seo" style="background-color: white; border-radius: 1.5rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); border: 1px solid #E5E7EB; padding: 2.5rem; position: relative; transition: transform 0.3s ease, opacity 0.3s ease; display: flex; flex-direction: column; height: 100%;">
+            <div class="pricing-card seo" style="display: none; display: none;" style="background-color: white; border-radius: 1.5rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); border: 1px solid #E5E7EB; padding: 2.5rem; position: relative; transition: transform 0.3s ease, opacity 0.3s ease; display: flex; flex-direction: column; height: 100%;">
 <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div class="relative z-10 flex flex-col h-full">
                     <h3 class="text-2xl font-bold text-foreground mb-2" style="font-family: \'Plus Jakarta Sans\', sans-serif; font-size: 1.75rem; font-weight: 800; margin-bottom: 0.75rem; letter-spacing: -0.02em;">Elite SEO</h3>
@@ -170,7 +170,7 @@
             </div>
 
             <!-- WEB DESIGN CARDS (Hidden initially) -->
-            <div class="pricing-card web" style="background-color: white; border-radius: 1.5rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); border: 1px solid #E5E7EB; padding: 2.5rem; position: relative; transition: transform 0.3s ease, opacity 0.3s ease; display: flex; flex-direction: column; height: 100%;">
+            <div class="pricing-card web" style="display: none; display: none;" style="background-color: white; border-radius: 1.5rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); border: 1px solid #E5E7EB; padding: 2.5rem; position: relative; transition: transform 0.3s ease, opacity 0.3s ease; display: flex; flex-direction: column; height: 100%;">
 <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div class="relative z-10 flex flex-col h-full">
                     <h3 class="text-2xl font-bold text-foreground mb-2" style="font-family: \'Plus Jakarta Sans\', sans-serif; font-size: 1.75rem; font-weight: 800; margin-bottom: 0.75rem; letter-spacing: -0.02em;">Landing Page</h3>
@@ -189,7 +189,7 @@
                 </div>
             </div>
             
-            <div class="pricing-card web" style="background-color: white; border-radius: 1.5rem; box-shadow: 0 8px 30px rgba(108,59,255,0.15); border: 2px solid var(--primary); padding: 2.5rem; position: relative; transition: transform 0.3s ease, opacity 0.3s ease; display: flex; flex-direction: column; height: 100%;">
+            <div class="pricing-card web" style="display: none; display: none;" style="background-color: white; border-radius: 1.5rem; box-shadow: 0 8px 30px rgba(108,59,255,0.15); border: 2px solid var(--primary); padding: 2.5rem; position: relative; transition: transform 0.3s ease, opacity 0.3s ease; display: flex; flex-direction: column; height: 100%;">
 <div class="absolute -inset-[1px] bg-gradient-to-b from-primary via-accent to-primary opacity-30 rounded-3xl blur-[2px] -z-10 group-hover:opacity-60 transition-opacity duration-500"></div>
                 <div class="absolute top-4 right-4 bg-gradient-to-r from-primary to-accent text-white text-[10px] font-black uppercase tracking-widest py-1.5 px-3 rounded-full shadow-lg">Most Popular</div>
                 <div class="relative z-10 flex flex-col h-full">
@@ -210,7 +210,7 @@
                 </div>
             </div>
 
-            <div class="pricing-card web" style="background-color: white; border-radius: 1.5rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); border: 1px solid #E5E7EB; padding: 2.5rem; position: relative; transition: transform 0.3s ease, opacity 0.3s ease; display: flex; flex-direction: column; height: 100%;">
+            <div class="pricing-card web" style="display: none; display: none;" style="background-color: white; border-radius: 1.5rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); border: 1px solid #E5E7EB; padding: 2.5rem; position: relative; transition: transform 0.3s ease, opacity 0.3s ease; display: flex; flex-direction: column; height: 100%;">
 <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div class="relative z-10 flex flex-col h-full">
                     <h3 class="text-2xl font-bold text-foreground mb-2" style="font-family: \'Plus Jakarta Sans\', sans-serif; font-size: 1.75rem; font-weight: 800; margin-bottom: 0.75rem; letter-spacing: -0.02em;">E-Commerce</h3>
@@ -234,28 +234,34 @@
     </div>
     
     <script>
-        function filterPricing(category, btn) {
+                function filterPricing(category, btn) {
             const buttons = document.querySelectorAll('.pricing-filter');
             buttons.forEach(b => {
-                b.classList.remove('active', 'bg-primary', 'text-primary" style="color: var(--primary);-foreground', 'shadow-sm');
-                b.classList.add('text-muted-foreground');
+                b.style.backgroundColor = 'transparent';
+                b.style.color = 'var(--muted-foreground)';
+                b.style.fontWeight = '600';
+                b.style.boxShadow = 'none';
+                b.classList.remove('active');
             });
-            btn.classList.add('active', 'bg-primary', 'text-primary" style="color: var(--primary);-foreground', 'shadow-sm');
-            btn.classList.remove('text-muted-foreground');
+            btn.style.backgroundColor = 'var(--primary)';
+            btn.style.color = 'white';
+            btn.style.fontWeight = '700';
+            btn.style.boxShadow = '0 4px 14px 0 rgba(108,59,255,0.39)';
+            btn.classList.add('active');
             
             const allCards = document.querySelectorAll('.pricing-card');
             allCards.forEach(card => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(10px)';
                 setTimeout(() => {
-                    card.classList.add('hidden');
+                    card.style.display = 'none';
                 }, 300);
             });
             
             setTimeout(() => {
                 const targetCards = document.querySelectorAll('.pricing-card.' + category);
                 targetCards.forEach(card => {
-                    card.classList.remove('hidden');
+                    card.style.display = 'flex'; // It uses flex layout
                     void card.offsetWidth;
                     card.style.opacity = '1';
                     card.style.transform = 'translateY(0)';
